@@ -8,7 +8,7 @@
 
 ### Introduction
 
-For this project, you will work with the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
+For this project, we apply the Deep Deterministic Policy Gradient (DDPG) algorith to the [Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher) environment.
 
 ![Trained Agent][image1]
 
@@ -18,19 +18,20 @@ The observation space consists of 33 variables corresponding to position, rotati
 
 ### Distributed Training
 
-For this project, we will provide you with two separate versions of the Unity environment:
+For this project, there are two separate versions of the Unity environment:
 - The first version contains a single agent.
 - The second version contains 20 identical agents, each with its own copy of the environment.  
 
 The second version is useful for algorithms like [PPO](https://arxiv.org/pdf/1707.06347.pdf), [A3C](https://arxiv.org/pdf/1602.01783.pdf), and [D4PG](https://openreview.net/pdf?id=SyZipzbCb) that use multiple (non-interacting, parallel) copies of the same agent to distribute the task of gathering experience.  
 
+
 ### Solving the Environment
 
-Note that your project submission need only solve one of the two versions of the environment. 
+We use the first version due to Jupyter kernel getting disconnected with distributed training. However, the code can be run with distributed training also. 
 
 #### Option 1: Solve the First Version
 
-The task is episodic, and in order to solve the environment,  your agent must get an average score of +30 over 100 consecutive episodes.
+The task is episodic, and in order to solve the environment,  the agent must get an average score of +30 over 100 consecutive episodes.
 
 #### Option 2: Solve the Second Version
 
